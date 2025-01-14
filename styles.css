@@ -1,60 +1,50 @@
-body {
+/* Reset some basic styles */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.navbar {
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the header and navigation bar */
+header {
+    background-color: #333;
     position: fixed;
     top: 0;
     width: 100%;
-    background: #333;
-    color: white;
-    padding: 10px 0;
     z-index: 1000;
 }
 
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/* Styling for the navigation menu */
+nav ul {
     display: flex;
+    list-style-type: none;
     justify-content: center;
+    padding: 10px;
 }
 
-.navbar ul li {
+nav ul li {
     margin: 0 15px;
 }
 
-.navbar ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s;
+    padding: 8px 16px;
 }
 
-.navbar ul li a:hover {
-    color: #00bcd4;
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
 }
 
+/* Add some space below the fixed navigation bar */
 section {
-    padding: 100px 20px;
-    margin-top: 60px;
-    height: 100vh;
-}
-
-#home {
-    background: #f4f4f4;
-}
-
-#about {
-    background: #ddd;
-}
-
-#services {
-    background: #bbb;
-}
-
-#contact {
-    background: #999;
+    padding-top: 60px;
+    text-align: center;
 }
